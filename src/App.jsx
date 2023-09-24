@@ -15,9 +15,14 @@ function App() {
   const dispatch = useDispatch();
   const { url } = useSelector((state) => state.home);
   useEffect(() => {
-    fetchAPI("movie/popular").then((res) => {
+    fetchAPI("/configuration").then((res) => {
       console.log(res);
-      dispatch(getAPIConfiguration(res));
+      const url = {
+        backdrop: res.images.secure_base_url + "original",
+        poster: res.images.secure_base_url + "original",
+        profile: res.images.secure_base_url + "original",
+      };
+      dispatch(getAPIConfiguration(url));
     });
   }, []);
 
