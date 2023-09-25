@@ -9,7 +9,7 @@ import Home from "./pages/home/Home";
 import Details from "./pages/details/Details";
 import SearchResult from "./pages/searchResult/SearchResult";
 import Explore from "./pages/explore/Explore";
-import ErrorPage from "./pages/errorPage/ErrorPage";
+import PageNotFound from "./pages/404/PageNotFound";
 
 function App() {
   const dispatch = useDispatch();
@@ -21,7 +21,7 @@ function App() {
       const url = {
         backdrop: res.images.secure_base_url + "w1280",
         poster: res.images.secure_base_url + "w342",
-        profile: res.images.secure_base_url + "original",
+        profile: res.images.secure_base_url + "w185",
       };
       dispatch(getAPIConfiguration(url));
     });
@@ -53,7 +53,7 @@ function App() {
         <Route path="/:mediaType/:id" element={<Details />} />
         <Route path="/search/:query" element={<SearchResult />} />
         <Route path="/explore/:mediaType" element={<Explore />} />
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
