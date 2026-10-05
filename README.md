@@ -46,8 +46,8 @@ Routes in `src/App.jsx`:
 Prerequisites: Node.js 18+ and npm.
 
 ```bash
-git clone https://github.com/anmoljames/moviewebapp.git
-cd moviewebapp
+git clone https://github.com/anmoljames/Movix.git
+cd Movix
 npm install
 ```
 
