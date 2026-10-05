@@ -1,5 +1,7 @@
 # Movix — Movie & TV Discovery Web App
 
+**Live Demo:** https://moviewebapp-ten.vercel.app/
+
 Fast, responsive movie/TV discovery UI built with **React + Vite**, **Redux Toolkit**, **React Router** and the **TMDB API**.
 
 Search millions of movies, TV shows and people, browse Trending / Popular / Top Rated, explore with genre + sort filters, and open rich detail pages with backdrop, poster, rating, genres, cast, trailers, recommendations and similar titles.
